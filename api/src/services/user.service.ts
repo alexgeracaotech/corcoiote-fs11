@@ -1,8 +1,7 @@
-import users from '../mocks/user.mock.ts';
 import type { User, CreateUser, UpdateUser } from '../types/user.type.ts';
 
 export function findAllUsers(): User[] {
-  return prisma.users.findMany();
+  return users;
 }
 
 export function findUserById(id: number): User {
