@@ -1,4 +1,4 @@
-import { InvoiceStatus } from './invoiceType.ts';
+import type { InvoiceStatus } from './invoiceType.ts';
 
 export function formatCurrency(value: number): string {
   const formatter = Intl.NumberFormat('pt-BR', {
@@ -6,7 +6,7 @@ export function formatCurrency(value: number): string {
     currency: 'BRL'
   });
 
-  return formatter.format(value / 100); 
+  return formatter.format(value / 100);
 }
 
 export function formatDate(date: string): string {

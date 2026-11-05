@@ -7,5 +7,5 @@ const container = document.querySelector('div');
 if (container) {
   const root = createRoot(container);
 
-  root.render(<App/>);
+  root.render(<App />);
 }
